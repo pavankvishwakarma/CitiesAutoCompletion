@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Tries {
-	private SingleTrieNode root;
+	public SingleTrieNode root;
 
 	public Tries() {
 		root = new SingleTrieNode(' '); 

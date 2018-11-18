@@ -16,7 +16,7 @@ public class SingleTrieNode {
 		childList = new LinkedList<SingleTrieNode>();
 		isLeave = false;        
 	}  
-
+	
 	public SingleTrieNode getChild(char c) {
 		if (childList != null)
 			for (SingleTrieNode eachChild : childList)
@@ -25,7 +25,7 @@ public class SingleTrieNode {
 		return null;
 	}
 
-	protected List<String> getWords() {
+	public List<String> getWords() {
 		List<String> list = new ArrayList<String>();      
 		if (isLeave) {
 			list.add(toString());
